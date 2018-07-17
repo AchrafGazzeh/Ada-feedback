@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Forms Checkpoint</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+
+<div id="body">
+
+    <div id="top">
+    	<p id="toptext" style="color: #0b536b;font-weight: bold;font-size: 30px;">
+    	Ada Students Feedback</p>
+    	
+    </div> 
+
+	<div id="left">
+		<img id="image" src="http://www.kevinsanders.nl/wp-content/uploads/2012/12/Feedback_logo.png">
+		<p id="text1" style="font-weight: bold;">To give us feedback, because this course is made for you! Because it's all about you!</p>
+		<p id="text2"> Fill this form if you:</p>
+		<ul>
+			<li>Find an error in the content or in the quizzes</li>
+			<li>Have a feedback about instructors or the experience</li>
+			<li>Have a suggestion on how to make the course better</li>
+		</ul>
+	</div>
+	<div id="right">
+		<p id="text3" style="font-weight: bold;font-size: 20px">Send an E-mail!</p>
+		
+		<div id="forms">
+			<form id="feedbackforms" onsubmit="submitform()">
+				<label>Your Name</label>
+				<input type="text" name="name" id="name" value="" required>
+				<br>
+                
+				<select id="track">
+					<option>Web</option>
+					<option>AI</option>
+					<option>Game</option>
+				</select>
+				<label>Slide Name ( or object ) </label>
+				<input type="text" name="slide" id="slide">
+				<br><br>
+				<label>Message</label>
+				
+				<textarea name="message" rows="5" id="message" style="margin: 0px; width: 400px; height: 69px;"></textarea>
+				<br>
+				<br>
+				
+				<br>
+				<h2 id="submittext">Thanks for the feedback :)</h2>
+				<button id="submitbtn" type="SUBMIT" onclick="inputValue()">SUBMIT</button>
+			</form>
+
+		</div>
+	</div>
+	
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAGnsslnekFNMXcL7qa9o3T65BeaxdbLKY",
+    authDomain: "gomycode-a93fa.firebaseapp.com",
+    databaseURL: "https://gomycode-a93fa.firebaseio.com",
+    projectId: "gomycode-a93fa",
+    storageBucket: "gomycode-a93fa.appspot.com",
+    messagingSenderId: "559155067371"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script src="main.js"></script>
+</html>

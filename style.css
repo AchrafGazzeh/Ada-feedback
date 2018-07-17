@@ -1,0 +1,112 @@
+body{
+width: 800px;
+background-color: #5fbad8;
+
+margin: auto;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+
+
+#left {
+padding-left: 5px;
+width: 292px;
+float: left;
+background-color: lightblue;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 2px 3px #0f86ad;
+}
+
+#right {
+width: 464px;
+float: right;
+background-color: #e3f2f2;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 2px 3px #0f86ad;
+    height: 478px;
+
+}
+
+
+
+#image {
+
+
+height: 200px;
+ width: 250px;
+	 border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+#image:hover {
+
+	  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+ul {
+
+list-style-type: circle;
+}
+
+label {
+
+	display: block;
+}
+
+#name,#slide,#message {
+
+
+}
+
+#track,#tracktext {
+position: relative;
+
+left: 250px;
+top: 10px;
+}
+
+
+input,textarea,select {
+	    border: 2px solid lightblue;
+    border-radius: 4px;
+}
+
+button {
+background-color: lightblue;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+width: 350px;
+height:40px;
+text-align: center;
+position: relative;
+left: 40px;
+-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+button:hover {
+
+    color: green;
+}
+
+input {
+height: 30px;
+
+}
+
+label {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#submittext {
+	text-align: center;
+	color: green;
+	display: none;
+}
+
